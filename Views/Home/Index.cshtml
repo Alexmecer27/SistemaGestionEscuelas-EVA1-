@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron bg-primary text-white rounded-4 p-5 mb-5 shadow-lg text-center">
+
+    <!-- Imagen centrada -->
+    <img src="~/images/escuela.jpg" alt="Escuela" class="img-fluid rounded-circle mb-4" style="max-width: 200px;">
+
+    <h1 class="display-3 fw-bold mb-3">¡Bienvenido al Sistema de Gestión de Escuelas de Ronald!</h1>
+    <h2 class="display-5 fw-semibold mb-3 text-warning">Psdta: ya pongame mi 10 inge 😎</h2>
+
+    <p class="lead mb-4">Administra tus <strong>Estudiantes</strong> y <strong>Profesores</strong> de manera rápida y eficiente.</p>
+
+    <a class="btn btn-light btn-lg fw-bold" asp-controller="Estudiantes" asp-action="Index">
+        <i class="bi bi-mortarboard-fill"></i> Ver Estudiantes
+    </a>
+    <a class="btn btn-light btn-lg fw-bold ms-2" asp-controller="Profesores" asp-action="Index">
+        <i class="bi bi-people-fill"></i> Ver Profesores
+    </a>
+</div>
+
+<!-- Iconos de Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
